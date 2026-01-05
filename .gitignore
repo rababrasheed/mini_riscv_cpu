@@ -1,0 +1,11 @@
+# Simulation outputs
+results/*.vcd
+results/*.log
+
+# Compiled simulation files
+*.o
+*.vvp
+
+# Editor / OS temp files
+*.swp
+*.DS_Store
