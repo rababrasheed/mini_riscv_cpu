@@ -1,7 +1,7 @@
 # Mini RISC-V CPU
 
 ## Overview
-This project implements a simplified, RISC-V single-cycle CPU written in Verilog. Each instruction completes in a single clock cycle and the design includes instruction fetch, decode, execute, memory access, and write-back stages.
+This project implements a simplified, RISC-V CPU written in Verilog. Each instruction completes in a single clock cycle and the design includes instruction fetch, decode, execute, memory access, and write-back stages.
 
 The purpose of this project was to gain hands-on experience with RTL design, CPU datapath construction, and waveform-based verification.
 
@@ -131,9 +131,6 @@ To run the simulation:
 ### Expected Output
 During simulation, the testbench prints the internal CPU state at each rising clock edge.
 
-**Format:**  
-Time | PC | Instr | x1 x2 x3 x4 x5 | DMEM[2] DMEM[3]
-
 **Expected output:**
 
 | Time  | PC | Instr | x1 | x2 | x3 | x4 | x5 | DMEM[2] | DMEM[3] |
@@ -166,19 +163,18 @@ GTKWave was used to inspect internal CPU behavior during execution. The followin
 - Write-back data
 - Destination register address
 
-[INSERT GTKWave WAVEFORM SCREENSHOT HERE]
-![Waveform](<Screenshot 2026-01-05 at 9.43.03 PM.png>)
+![Waveform](image-1.png)
 
 These signals demonstrate the full instruction lifecycle from fetch through write-back.
 
 ---
 
 ## Tools Used
-- Verilog HDL
-- Icarus Verilog
-- GTKWave
-- VS Code
-- Git/Github
+- **Verilog** — RTL design and testbench
+- **Icarus Verilog** — Simulation
+- **GTKWave** — Waveform viewer
+- **VS Code** — Development environment
+- **Git/GitHub** — Version control
 
 ---
 
